@@ -3,12 +3,16 @@
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
-========                                    .-----.          ======== ========         .----------------------.   | === |          ======== ========         |.-""""""""""""""""""-.|   |-----|          ======== ========         ||                    ||   | === |          ========
+========                                    .-----.          ========
+========         .----------------------.   | === |          ========
+========         |.-""""""""""""""""""-.|   |-----|          ========
+========         ||                    ||   | === |          ========
 ========         ||   KICKSTART.NVIM   ||   |-----|          ========
 ========         ||                    ||   | === |          ======== 
 ========         ||                    ||   |-----|          ========
 ========         ||:Tutor              ||   |:::::|          ======== 
-========         |'-..................-'|   |____o|          ======== ========         `"")----------------(""`   ___________      ========
+========         |'-..................-'|   |____o|          ========
+========         `"")----------------(""`   ___________      ========
 ========        /::::::::::|  |::::::::::\  \ no mouse \     ========
 ========       /:::========|  |==hjkl==:::\  \ required \    ========
 ========      '""""""""""""'  '""""""""""""'  '""""""""""'   ========
@@ -160,6 +164,14 @@ vim.keymap.set('i', 'jj', '<Esc>')
 
 -- Set <C-s> to save file
 vim.keymap.set('n', '<C-s>', ':w<CR>')
+vim.keymap.set('i', '<C-s>', '<Esc>:w<CR>a')
+
+-- Set <C-z> to undo
+vim.keymap.set('n', '<C-z>', 'u')
+vim.keymap.set('i', '<C-z>', '<Esc>ui')
+
+-- Set <C-r> to redo
+vim.keymap.set('i', '<C-r>', '')
 
 -- <C-o> to go back to previous buffer
 -- Set :Ex to return folder
@@ -203,6 +215,11 @@ vim.opt.tabstop = 4
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
+
+-- clipboard enable
+vim.opt.clipboard = 'unnamedplus'
+
+-- Set the guicursor option
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -912,10 +929,9 @@ require('lazy').setup {
       -- vim.g.floaterm_keymap_next = '<F9>'
       -- vim.g.floaterm_keymap_toggle = '<F12>'
 
-      -- Set keymaps
-      vim.keymap.set('n', '<leader>fo', function()
-        vim.cmd ':FloatermNew<CR>'
-      end, { desc = 'Open the floaterm' })
+      -- Set Keymaps
+      vim.keymap.set('n', '<leader>fo', ':FloatermNew<CR>', { desc = 'Open the floaterm' })
+      vim.keymap.set('n', '<leader>ft', ':FloatermToggle<CR>', { desc = 'Toggle the floaterm' })
     end,
   },
 
@@ -1076,6 +1092,23 @@ require('lazy').setup {
       vim.o.vimtex_view_method = 'zathura'
     end,
   },
+
+  -- NOTE: install the preview markdown text
+  -- USE: :MarkdownPreview --> open the markdown preview
+  {
+    'iamcco/markdown-preview.nvim',
+    cmd = { 'MarkdownPreviewToggle', 'MarkdownPreview', 'MarkdownPreviewStop' },
+    ft = { 'markdown' },
+    build = function()
+      vim.fn['mkdp#util#install']()
+    end,
+  },
+
+  -- NOTE: Light speed for motion in neovim
+  { 'ggandor/lightspeed.nvim' },
+
+  -- NOTE: vim-surround is all about "surrounding"
+  { 'tpope/vim-surround' },
 }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
