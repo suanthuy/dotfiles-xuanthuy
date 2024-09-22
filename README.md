@@ -1,4 +1,5 @@
 # nvim-kickstart
-Save the neovim config kickstart files
+Config directory: /home/oceanus/.config/nvim/
+Data directory: /home/oceanus/.local/share/nvim/ 
 
-Direction: /home/oceanus/.config/nvim/
+
