@@ -74,8 +74,10 @@ require("lazy").setup({
 
   { "catppuccin/nvim", as = "catppuccin" },
 
+  -- vscode pictograms for neovim
   { "onsails/lspkind.nvim" },
   
+  -- fast git decorations implemented
   { "lewis6991/gitsigns.nvim",
     config = function() 
         require('gitsigns').setup()
