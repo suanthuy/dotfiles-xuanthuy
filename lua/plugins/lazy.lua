@@ -22,9 +22,8 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
-require("lazy").setup(
-{
- {
+require("lazy").setup({
+  {
     "goolord/alpha-nvim",
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     config = function ()
@@ -72,5 +71,16 @@ require("lazy").setup(
       alpha.setup(dashboard.config)
     end
   },
+
+  { "catppuccin/nvim", as = "catppuccin" },
+
+  { "onsails/lspkind.nvim" },
+  
+  { "lewis6991/gitsigns.nvim",
+    config = function() 
+        require('gitsigns').setup()
+    end
+  },
+
 })
 

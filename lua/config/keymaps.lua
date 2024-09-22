@@ -11,3 +11,9 @@ vim.keymap.set("i", "jj", "<ESC>")
 -- save in normal mode
 -- :w means save
 vim.keymap.set("n", "<leader>s", ":w<CR>")
+
+-- Disable <C-z>
+vim.keymap.set("n", "<C-z>", "")
+
+
+
