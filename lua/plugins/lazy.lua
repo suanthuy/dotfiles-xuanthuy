@@ -51,7 +51,7 @@ require("lazy").setup({
         "⠀⠀⣝⠛⢿⣿⣿⣿⣿⣿⣿⠟⣁⠀⠀⢈⠛⠿⢸⣇⢸⡇⢸⡇⣶⣦⣌⡙⠻⢄⡀⠁⠘⠇⠘⣿⢸⣿⡇⣿⡇⢸⡛⠷⣦⣄⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿",
 
       }
-      
+
       dashboard.section.buttons.val = {
          dashboard.button("e", "  New file", "<cmd>ene <CR>"),
          dashboard.button("SPC f o", "󰈞  Recently opened files"),
@@ -61,7 +61,7 @@ require("lazy").setup({
       local handle = io.popen('fortune')
       local fortune = handle:read("*a")
       handle:close()
-      
+
       dashboard.section.footer.val = fortune
 
       dashboard.config.opts.noautocmd = true
@@ -76,13 +76,40 @@ require("lazy").setup({
 
   -- vscode pictograms for neovim
   { "onsails/lspkind.nvim" },
-  
+
   -- fast git decorations implemented
   { "lewis6991/gitsigns.nvim",
     config = function() 
         require('gitsigns').setup()
     end
   },
+
+  -- a Neovim plugin that helps you pick font characters, symbol, nerd font icon
+  {
+    "ziontee113/icon-picker.nvim",
+    config = function()
+        require("icon-picker").setup({ disable_legacy_commands = true })
+
+    end
+  },
+
+  -- preview markdown in your browser with synchronised scrolling and flexible configuration
+  -- install without yarn or npm
+  {
+      "iamcco/markdown-preview.nvim",
+      cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+      ft = { "markdown" },
+      build = function() vim.fn["mkdp#util#install"]() end,
+  },
+
+  -- Distracion-free coding for Neovim >= 0.5
+  -- Open the current buffer in a new full-screen floating window
+  -- Focus on one window
+  { "folke/zen-mode.nvim" },
+
+  -- smart and powerful commenting plugin for neovim
+  { 'numToStr/Comment.nvim' },
+
 
 })
 
