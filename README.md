@@ -1,1 +1,1 @@
-# NVIM-KICKSTART
+# Dotfiles from xuanthuy

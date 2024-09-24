@@ -21,23 +21,28 @@ hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
 end)
 
 vim.g.rainbow_delimiters = { highlight = highlight }
+
 require("ibl").setup { 
     indent = {
-       -- char = "|",
-       -- tab_char = { "a", "b", "c" },
+       char = "│",
+       tab_char = "│",
        -- highlight = { "Function", "Label" },
+       -- highlight = highlight,
        -- smart_indent_cap = true,
-       -- priority = 600,
+       -- priority = 1,
        -- repeat_linebreak = false,
     },
     scope = {
        enabled = true,
+       -- char = "│",
        show_start = true,
-       show_end = true,
+       show_end = false,
        -- injected_languages = false,
        -- highlight = { "Function", "Label" },
        highlight = highlight,
-       priority = 1,
+       -- highlight =  'CurrentScope',
+       -- priority = 10,
+       -- show_exact_scope = false,
     }
 }
 

@@ -80,52 +80,72 @@ require("lazy").setup({
     -- fast git decorations implemented
     { "lewis6991/gitsigns.nvim" },
 
--- a Neovim plugin that helps you pick font characters, symbol, nerd font icon
-{
-    "ziontee113/icon-picker.nvim",
-    config = function()
-        require("icon-picker").setup({ disable_legacy_commands = true })
+    -- a Neovim plugin that helps you pick font characters, symbol, nerd font icon
+    {
+        "ziontee113/icon-picker.nvim",
+        config = function()
+            require("icon-picker").setup({ disable_legacy_commands = true })
+        end
+    },
 
-    end
-},
+    -- preview markdown in your browser with synchronised scrolling and flexible configuration
+    -- install without yarn or npm
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function() vim.fn["mkdp#util#install"]() end,
+    },
 
--- preview markdown in your browser with synchronised scrolling and flexible configuration
--- install without yarn or npm
-{
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    ft = { "markdown" },
-    build = function() vim.fn["mkdp#util#install"]() end,
-},
+    -- Distracion-free coding for Neovim >= 0.5
+    -- Open the current buffer in a new full-screen floating window
+    -- Focus on one window
+    { "folke/zen-mode.nvim" },
 
--- Distracion-free coding for Neovim >= 0.5
--- Open the current buffer in a new full-screen floating window
--- Focus on one window
-{ "folke/zen-mode.nvim" },
+    -- smart and powerful commenting plugin for neovim
+    { 'numToStr/Comment.nvim' },
 
--- smart and powerful commenting plugin for neovim
-{ 'numToStr/Comment.nvim' },
+    -- add indentation guides to Neovim
+    {
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
+        ---@module "ibl"
+        ---@type ibl.config
+        opts = {},
+    },
 
--- add indentation guides to Neovim
-{
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    ---@module "ibl"
-    ---@type ibl.config
-    opts = {},
-},
+    -- Highlight, edit, and navigate code
+    {
+        'nvim-treesitter/nvim-treesitter',
+        build = function()
+            pcall(require('nvim-treesitter.install').update { with_sync = true })
+        end,
+        dependencies = {
+            'nvim-treesitter/nvim-treesitter-textobjects',
+        }
+    },
 
--- Highlight, edit, and navigate code
-{
-    'nvim-treesitter/nvim-treesitter',
-    build = function()
-        pcall(require('nvim-treesitter.install').update { with_sync = true })
-    end,
-    dependencies = {
-        'nvim-treesitter/nvim-treesitter-textobjects',
+    -- statusline written in Lua
+    {
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+
+    -- Surround selection
+    {
+        "kylechui/nvim-surround",
+        version = "*", -- Use for stability; omit to use `main` branch for the latest features
+        event = "VeryLazy",
+    },
+
+    -- auopair plugin for Neovim
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = function() require("nvim-autopairs").setup {} end
+        -- use opts = {} for passing setup options
+        -- this is equivalent to setup({}) function
     }
-},
-
 
 })
 
