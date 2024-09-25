@@ -150,6 +150,7 @@ require("lazy").setup({
         -- this is equivalent to setup({}) function
     },
 
+    -- Add nvim tree
     {
         "nvim-tree/nvim-tree.lua",
         version = "*",
@@ -173,7 +174,11 @@ require("lazy").setup({
                 },
             }
         end,
-    }
+    },
+
+    -- Bufferline with tagpage integration for using Lua
+    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}
+
 
 })
 
