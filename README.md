@@ -1,4 +1,4 @@
-# Dotfiles from xuanthuy
+# Neovim from xuanthuy
 
 ## Install config
 
