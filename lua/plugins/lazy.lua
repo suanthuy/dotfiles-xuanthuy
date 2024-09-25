@@ -177,8 +177,10 @@ require("lazy").setup({
     },
 
     -- Bufferline with tagpage integration for using Lua
-    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'}
+    {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
 
+    -- Find, Filter, Preview, Pick. All lua, all the time. 
+    { 'nvim-telescope/telescope.nvim', tag = '0.1.8', dependencies = { 'nvim-lua/plenary.nvim' }},
 
 })
 
