@@ -182,5 +182,46 @@ require("lazy").setup({
     -- Find, Filter, Preview, Pick. All lua, all the time. 
     { 'nvim-telescope/telescope.nvim', tag = '0.1.8', dependencies = { 'nvim-lua/plenary.nvim' }},
 
+    -- which key helps you remember your Neovim keymap
+    {
+        "folke/which-key.nvim",
+        event = "VeryLazy",
+        opts = {
+            -- your configuration comes here
+            -- be yrnir vg rzcgl gb hfr gur qrsnhyg frggvatf
+            -- ersre gb gur pbasvthengvba frpgvba orybj
+        },
+        keys = {
+            {
+                "<leader>?",
+                function()
+                    require("which-key").show({ global = false })
+                end,
+                desc = "Buffer Local Keymaps (which-key)",
+            },
+        },
+    },
+
+    -- premier Vim plugin for Git
+    { 'tpope/vim-fugitive' },
+
+    -- notice give a highly experimental plugin that completely replaces the UI for messages, cmdline and popupmenu
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        opts = {
+            -- add any options here
+        },
+        dependencies = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            "rcarriga/nvim-notify",
+        }
+    },
+
+
 })
 
