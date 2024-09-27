@@ -17,3 +17,11 @@ vim.keymap.set('n', '<leader>to', '<cmd>:NvimTreeOpen<CR>', { desc = 'Nvim-tree 
 vim.keymap.set('n', '<leader>tc', '<cmd>:NvimTreeClose<CR>', { desc = 'Nvim-tree close'})
 vim.keymap.set('n', '<leader>tt', '<cmd>:NvimTreeToggle<CR>', { desc = 'Nvim-tree open or close'})
 
+-- trouble
+vim.keymap.set('n', '<leader>xx',  "<cmd>Trouble diagnostics toggle<cr>", { desc = "Diagnostics (Trouble)" })
+vim.keymap.set('n', '<leader>xt',  "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", { desc = "Buffer Diagnostics (Trouble)" })
+vim.keymap.set('n', '<leader>cs',  "<cmd>Trouble symbols toggle focus=false<cr>", { desc = "Symbols (Trouble)" })
+vim.keymap.set('n', '<leader>cl',  "<cmd>Trouble lsp toggle focus=false win.position=right<cr>", { desc = "LSP Definitions / references / ... (Trouble)" })
+vim.keymap.set('n', '<leader>xl',  "<cmd>Trouble loclist toggle<cr>", { desc = "Location List (Trouble)" })
+vim.keymap.set('n', '<leader>xq',  "<cmd>Trouble qflist toggle<cr>", { desc = "Quickfix List (Trouble)" })
+
