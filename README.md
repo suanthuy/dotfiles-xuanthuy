@@ -9,6 +9,8 @@
 
 ## Usage
 
+### Neovim command line
+
 ### numToStr/Comment.nvim
 
 There mappings are enabled by default.
