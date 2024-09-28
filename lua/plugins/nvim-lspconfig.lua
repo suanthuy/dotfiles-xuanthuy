@@ -81,6 +81,7 @@ local ensure_installed = {
     "lua_ls",
     "eslint",
     "pyright",
+    "clangd",
 }
 
 local server_settings = {
@@ -89,6 +90,7 @@ local server_settings = {
     lua_ls = {},
     eslint = {},
     pyright = {},
+    clangd = {},
 }
 
 -- Ensure the servers above are installed
