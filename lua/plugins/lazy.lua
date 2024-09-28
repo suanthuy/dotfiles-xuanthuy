@@ -270,8 +270,8 @@ require("lazy").setup({
         'neovim/nvim-lspconfig',
         dependencies = {
             -- Automatically install LSPs to stdpath for neovim
-            'williamboman/mason.nvim',
-            'williamboman/mason-lspconfig.nvim',
+            "williamboman/mason.nvim",
+            { "williamboman/mason-lspconfig.nvim", config = function() end },
 
             -- Useful status updates for LSP
             'j-hui/fidget.nvim',
@@ -280,7 +280,7 @@ require("lazy").setup({
 
 
     -- Autocompletion
-    { 
+    {
         'hrsh7th/nvim-cmp',
         event = 'InsertEnter',
         dependencies = {
@@ -314,7 +314,7 @@ require("lazy").setup({
     },
 
     -- Highlight words and lines
-    { "yamatsum/nvim-cursorline" },
-
+    { "yamatsum/nvim-cursorline" }, 
 })
+
 
