@@ -88,6 +88,12 @@ require("lazy").setup({
         },
     },
 
+    -- Neovim plugin to improve the defaut vim.ui interfaces
+    {
+        'stevearc/dressing.nvim',
+        opts = {},
+    },
+
     -- a Neovim plugin that helps you pick font characters, symbol, nerd font icon
     {
         "ziontee113/icon-picker.nvim",
