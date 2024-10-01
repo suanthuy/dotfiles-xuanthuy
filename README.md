@@ -53,16 +53,18 @@ There mappings are enabled by default.
 ### iamcco/markdown-preview.nvim
 
 ```
-`:MarkdownPreviewToggle` - 
+`:MarkdownPreviewToggle` -
 `:MarkdownPreview` - 
 `:MarkdownPreviewStop` - 
 ```
 
-### kylechui/nvim-surround
+### tpope/vim-surround
 
 ```
-
-
+ysiw) - surround word - you surround in a word )
+ys$" - make a string - you surround $ )
+ds] - delete surround ]
+cs]{ - change surround from ] to {
 ```
 
 ### telescope.nvim
@@ -82,7 +84,6 @@ There mappings are enabled by default.
 <leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
 ```
 
-### nvim-surround
 
 
 
