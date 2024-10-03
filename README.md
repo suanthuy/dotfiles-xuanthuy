@@ -5,6 +5,7 @@
 ## Configs
 
 > git clone https://github.com/suanthuy/dotfiles-xuanthuy.git ~/dotfiles
+>
 > ln -s ~/dotfiles/nvim ~/.config/nvim
 
 ## Scripts
