@@ -1,6 +1,6 @@
 -- % to create new file
 -- d to create new directory
--- :Ex for quit the file
+-- :Ex for quit the file and go to directory
 --
 -- space bar leader key
 vim.g.mapleader = " "
@@ -10,7 +10,11 @@ vim.keymap.set("i", "jj", "<ESC>")
 
 -- save in normal mode
 -- :w means save
-vim.keymap.set("n", "<leader>s", ":w<CR>")
+-- <leader>s for telescope search
+-- vim.keymap.set("n", "<leader>s", ":w<CR>")
+
+-- :Ex for quit the file and go to directory
+vim.keymap.set("n", "<leader>ex", ":Ex<CR>")
 
 -- Disable <C-z>
 vim.keymap.set("n", "<C-z>", "")
