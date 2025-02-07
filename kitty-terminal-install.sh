@@ -13,5 +13,6 @@ sed -i "s|Exec=kitty|Exec=$(readlink -f ~)/.local/kitty.app/bin/kitty|g" ~/.loca
 # Make xdg-terminal-exec (and hence desktop environments that support it use kitty)
 echo 'kitty.desktop' > ~/.config/xdg-terminals.list
 
+# kitty.conf location: ~/.config/kitty/kitty.conf
 # Add path to kitty.conf
 env PATH=${PATH}:/usr/local/bin
