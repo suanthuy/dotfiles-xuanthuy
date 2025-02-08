@@ -1,4 +1,4 @@
-# Neovim from xuanthuy
+# Neovi from xuanthuy
 
 ## Install config
 
