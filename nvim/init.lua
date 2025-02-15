@@ -1,5 +1,5 @@
+require("config.keymaps")
+require("config.options")
 require("config.lazy")
--- require("keymaps")
--- require("options")
 -- require("workflows")
 -- require("init-config")
