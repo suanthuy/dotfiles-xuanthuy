@@ -12,8 +12,8 @@ return {
                 {
                     mode = { "n", "v" },
                     { "<leader><tab>", group = "tabs" },
-                    { "<leader>c", group = "code" },
-                    { "<leader>d", group = "debug" },
+                    { "<leader>c", group = "code", desc = "code" },
+                    { "<leader>d", group = "debug", desc = "debug" },
                     { "<leader>dp", group = "profiler" },
                     { "<leader>f", group = "file/find" },
                     { "<leader>g", group = "git" },
