@@ -2,7 +2,7 @@
 sudo apt install fzf
 
 # Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+# source <(fzf --zsh)
 
 # Set up theme for fzf
 export FZF_DEFAULT_OPTS=" \
