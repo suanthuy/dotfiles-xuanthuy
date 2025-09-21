@@ -135,4 +135,33 @@ alias cp-nvim-config='nvim-dotfiles && cp -r ./ ~/.config'
 alias acerbattery='cd /mnt/install/01-Installer/acer-wmi-battery && sudo insmod acer-wmi-battery.ko'
 
 # Using starship if have
-eval "$(starship init zsh)"
+if command -v starship >/dev/null 2>&1; then
+  echo "Starship is installed"
+  starship --version
+  eval "$(starship init zsh)"
+else
+  echo "Starship is NOT installed"
+fi
+
+
+# Using fzf if have
+if command -v fzf >/dev/null 2>&1; then
+  echo "fzf is installed"
+  echo "check fzf version"
+  fzf --version
+  echo "Set up theme catppucin-frappe for fzf"
+  export FZF_DEFAULT_OPTS=" \
+    --color=bg+:#414559,bg:#303446,spinner:#F2D5CF,hl:#E78284 \
+    --color=fg:#C6D0F5,header:#E78284,info:#CA9EE6,pointer:#F2D5CF \
+    --color=marker:#BABBF1,fg+:#C6D0F5,prompt:#CA9EE6,hl+:#E78284 \
+    --color=border:#737994,label:#C6D0F5"
+else
+  echo "fzf is NOT installed"
+fi
+
+# Using tmux if have
+if command -v tmux >/dev/null 2>&1; then
+  echo "tmux is installed"
+else
+  echo "tmux is NOT installed"
+fi
