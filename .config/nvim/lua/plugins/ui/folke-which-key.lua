@@ -4,6 +4,7 @@ return {
     {
         "folke/which-key.nvim",
         event = "VeryLazy",
+        enabled = false,
         opts_extend = { "spec" },
         opts = {
             preset = "helix",
