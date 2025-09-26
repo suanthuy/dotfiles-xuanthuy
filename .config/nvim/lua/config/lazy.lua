@@ -51,3 +51,6 @@ require("lazy").setup({
 		},
 	},
 })
+
+-- vim.cmd[[colorscheme tokyonight]]
+vim.cmd.colorscheme "catppuccin-frappe"

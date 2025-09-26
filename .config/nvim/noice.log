@@ -1,0 +1,4 @@
+{ "msg_showcmd", "sl:1", "tick:273", false, { { 0, ":", 0 } } }
+{ "cmdline_show", "sl:1", "tick:274", "mode:c", { { 0, "" } } }
+{ "cmdline_show", "sl:1", "tick:277", "mode:c", { { 0, "q" } } }
+{ "cmdline_hide", "sl:1", "tick:279", false, 1 }
