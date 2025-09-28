@@ -19,3 +19,11 @@ Nvim is an editor with special motion. This note writes down my experience after
 
 Tmux has three layers. They are sesstion, window and panel.
 
+To enter command in tmux, you need to use prefix key. The default prefix is ctrl + b.
+
+To detach from a session, not end it, not end anything. Everything still run, all we are going to do just detach.
+
+```
+    prefix + d
+```
+
