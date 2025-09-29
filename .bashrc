@@ -122,4 +122,23 @@ export NVM_DIR="$HOME/.nvm"
 . "$HOME/.cargo/env"
 
 
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin:/~/.local/kitty.app/bin"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin:/~/.local/kitty.app/bin:/usr/bin"
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local" ] ; then
+    PATH="$HOME/.local:$PATH"
+fi
+
+
+
+
