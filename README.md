@@ -15,6 +15,7 @@ git clone https://github.com/suanthuy/dotfiles-xuanthuy.git ~/dotfiles
 Nvim is an editor with special motion. This note writes down my experience after using it for a while.
 
 ## Tmux cheat sheet
+
 Tmux has three layers. They are sesstion, window and panel.
 
 To enter command in tmux, you need to use prefix key. The default prefix is ctrl + b.
@@ -63,7 +64,19 @@ Hold `prefix` + `arrow` for changing the size of panel.
 
 Using `prefix + Alt + <1,2,3,4>` for auto choosing pre-selected layouts.
 
-Create new window `prefix + C`.
+Create new window `prefix + c`. Notice, we can see the current window by the asterisk.
+
+Move to next window `prefix + n`.
+
+Rename your window `prefix + ,`.
+
+Using `prefix + w` to choose the window.
+
+To kill panel, using `prefix + x`.
+
+To kill window, using `prefix + &`.
+
+Using `prefix + [` to change to copy mode. Then, hit space to choose the words and hit enter. Next, using `prefix + ]` for pasting.
 
 ## Fzf cheat sheet
 
