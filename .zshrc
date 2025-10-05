@@ -165,3 +165,6 @@ if command -v tmux >/dev/null 2>&1; then
 else
   echo "tmux is NOT installed"
 fi
+
+# Update fzf config
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

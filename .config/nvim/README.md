@@ -1,11 +1,12 @@
-# Neovi from xuanthuy
+# Neovim from xuanthuy
 
-## Install config
+## The plan
 
-```
-
-
-```
+- [ ] Lazy.nvim
+- [ ] Lazy.nvim
+- [ ] which-key.nvim
+- [ ] Lazy.nvim
+- [ ] Lazy.nvim
 
 ## Usage
 
