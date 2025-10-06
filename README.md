@@ -113,11 +113,62 @@ Autocomplete, using ** and TAB. Fuzzy find will appear.
     cd **
 ```
 
+## fdfind (fd)
+
+Install fdfind
+
+```
+    sudo apt install fd-find
+    ln -s $(which fdfind) ~/.local/bin/fd
+```
+
+Use -H with fd to find hidden folders or files.
+
+```
+    fd -H
+```
+
+Use -I with fd to find all folders or files in ignore config.
+
+```
+    fd -I
+```
+
+Use -i for insensitive search (khong phan biet chu hoa, chu thuong) and -s for sensitive search (phan biet chu hoa, chu thuong).
+
+```
+    fd -i or fd -s
+```
+
+Use fd with glob method searching.
+
+```
+    fd -g "*.mp3"
+```
+
+`fd -l` for searching with the permission of the files.
+
+`fd --max-results` for searching with the max result return.
+
+Use -S to search with the size. List all the files with limit size.
+
+```
+    fd -S +1000K png #find all the png files with size over 1000K
+```
+
+`fd -t f -x wc -l` this command will search all the files in this directory and then do a word count on that files.
+
+Need to learn regex for fd.
+
+## ripgrep (rg)
+
+Install ripgrep using apt.
+
+```
+    sudo apt install ripgrep
+```
 
 
-## Find (fd)
-
-## Ripgrep (rg)
 
 ## i3wm
 

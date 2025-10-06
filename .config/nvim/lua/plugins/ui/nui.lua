@@ -2,6 +2,7 @@ return {
     -- Install nui.nvim
     -- dependence for folke-noice
     {
-    "MunifTanjim/nui.nvim"
+        "MunifTanjim/nui.nvim",
+        enabled = false,
     }
 }

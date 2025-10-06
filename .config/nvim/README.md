@@ -2,7 +2,7 @@
 
 ## The plan
 
-- [ ] Lazy.nvim
+- [x] Lazy.nvim
 - [ ] Lazy.nvim
 - [ ] which-key.nvim
 - [ ] Lazy.nvim

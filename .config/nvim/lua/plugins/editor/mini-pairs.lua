@@ -2,6 +2,7 @@ return {
     -- auto pairs
     {
         "echasnovski/mini.pairs",
+        enabled = false,
         event = "VeryLazy",
         opts = {
             modes = { insert = true, command = true, terminal = false },
