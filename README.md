@@ -168,6 +168,23 @@ Install ripgrep using apt.
     sudo apt install ripgrep
 ```
 
+The command of ripgrep:
+
+```
+    rg [OPTIONS] PATTERN [PATH ...]
+    Ex: rg Port /etc/ssh/ssh_config --> command will return all the Port position with row number
+    --> can check by nvim +<row number> <path to file>
+```
+
+If you do not give rg a path, it will search recursively your current working directory.
+
+If your file is in .gitignore, rg will ignore the file in .gitignore.
+
+Replace string with rg.
+
+```
+    rg <string 1> <path> -r <string 2> # rg will replace string 1 by string 2 in display not in actual file.
+```
 
 
 ## i3wm
