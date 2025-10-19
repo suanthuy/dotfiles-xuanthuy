@@ -9,8 +9,8 @@
 -- space bar leader key
 vim.g.mapleader = " "
 
--- jj equal to esc
-vim.keymap.set("i", "jj", "<ESC>")
+-- jk equal to esc
+vim.keymap.set("i", "jk", "<ESC>")
 
 -- save in normal mode
 -- :w means save
