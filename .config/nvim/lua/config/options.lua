@@ -47,5 +47,3 @@ vim.opt.scrolloff = 8 -- minimal number of screen lines to keep above and below 
 vim.opt.sidescrolloff = 8 -- minimal number of screen columns to keep to the left and to the right of the cursor if nowrap is set
 
 
-
-

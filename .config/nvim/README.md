@@ -2,8 +2,11 @@
 
 ## The plan
 
-- [ ] Nvim
+- [x] Nvim
+    - Install from nvim offical page.
 - [x] Lazy.nvim
+- [ ] Lualine.nvim
+- [ ] Snacks.nvim
 - [ ] which-key.nvim
 - [ ] Lazy.nvim
 - [ ] Lazy.nvim
