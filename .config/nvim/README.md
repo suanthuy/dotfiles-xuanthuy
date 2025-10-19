@@ -5,8 +5,10 @@
 - [x] Nvim
     - Install from nvim offical page.
 - [x] Lazy.nvim
-- [ ] Lualine.nvim
-- [ ] Snacks.nvim
+- [x] ColorScheme
+- [x] Lualine.nvim (Status line)
+- [x] Snacks.nvim
+    - Using indent for sure.
 - [ ] which-key.nvim
 - [ ] Lazy.nvim
 - [ ] Lazy.nvim
