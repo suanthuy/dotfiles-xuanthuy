@@ -7,11 +7,11 @@ return {
         enabled = true,
         opts_extend = { "spec" },
         opts = {
-            preset = "helix",
+            preset = "modern",
             defaults = {},
             spec = {
                 {
-                    mode = { "n", "v" },
+                    mode = { "n", "x" },
                     { "<leader><tab>", group = "tabs" },
                     { "<leader>c", group = "code", desc = "code" },
                     { "<leader>d", group = "debug", desc = "debug" },
@@ -29,7 +29,7 @@ return {
                     { "gs", group = "surround" },
                     { "z", group = "fold" },
                     {
-                        "<leader>b",
+                       "<leader>b",
                         group = "buffer",
                         expand = function()
                             return require("which-key.extras").expand.buf()
@@ -54,7 +54,7 @@ return {
                 function()
                     require("which-key").show({ global = false })
                 end,
-                desc = "Buffer Keymaps (which-key)",
+                desc = "Buffer Local Keymaps (which-key)",
             },
             {
                 "<c-w><space>",
@@ -65,7 +65,12 @@ return {
             },
         },
         config = function(_, opts)
-
+            -- Using register to create the beginner of which-key window
+            local wk = require("which-key")
+            wk.setup(opts)
+            if not vim.tbl_isempty(opts.defaults) then
+                wk.register(opts.defaults)
+            end
         end,
     },
 

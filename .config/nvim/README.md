@@ -9,9 +9,18 @@
 - [x] Lualine.nvim (Status line)
 - [x] Snacks.nvim
     - Using indent for sure.
-- [ ] which-key.nvim
-- [ ] Lazy.nvim
-- [ ] Lazy.nvim
+- [x] mini-icons.nvim
+- [x] which-key.nvim
+- [ ] fzf-lua
+- [ ] telescope
+- [ ] grup-far
+- [ ] gitsigns
+- [ ] folke-notice
+- [ ] folke-flash
+- [ ] folke-todo-comments
+- [ ] folke-trouble
+- [ ] nvim-treesitter
+- [ ] mini-pairs
 
 ## Nvim cheat sheet
 
