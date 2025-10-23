@@ -26,6 +26,8 @@
 
 ### Motion master
 
+Command + Count + Motion. Command likes d, c, y, v.
+
 Using `h, j, k, l` to move left, down, up, right.
 
 ```
@@ -53,9 +55,17 @@ Using `0` for jumping to the beginning of the line.
 
 Using `$` for jumping to the end of the line.
 
-Using `^` for jumping to the first character of the line.
+Using `^` or `_` for jumping to the first character of the line.
 
-Using `f` for finding the character. Using `;` to repeat find forward. Using `,` to repeat find backward.
+Using `f` for finding the character and moving the the character. Using`t` for finding the character and moving to the before character. Using `;` to repeat find forward. Using `,` to repeat find backward.
+
+Using `F` for finding the backward character. Using `T` for finding the backward character and move to the next to position.
+
+Using `df` + <character> or `dt` + <character> to delete all the text to or reach the target.
+
+Using `d` + <number> + `f` + <character> or `d` + <number> + `t` + <character> to delete all the text to or reach the target.
+
+Using `yf` + <character> or `yt` + <character> to yank all the text to or reach the target.
 
 You can use number with `f` to move to the character.
 
@@ -125,6 +135,18 @@ Using `zz` to move the window to center.
 `shift + h`
 
 `shift + m`
+
+Using `Ctrl w v` to split window horizontal.
+
+Using `Ctrl d` to page down and `Ctrl u` to page up.
+
+Using `gg` to move to the beginning of file.
+
+Using `Shift g` to move to the end of file.
+
+Using `:` + <number> to move to the number line.
+
+Using `y` to yank anything. Then, press `*` for searching and using `n` or `N` for moving forward and backward.
 
 ## Usage
 
