@@ -148,6 +148,18 @@ Using `:` + <number> to move to the number line.
 
 Using `y` to yank anything. Then, press `*` for searching and using `n` or `N` for moving forward and backward.
 
+Using `vi{` for choose all the text inside {} or `va{` for choose everything and around {}, `viw` for choose only the word, `viW` for choosing all the big word until hit space. You can use y for yanking.
+
+`Vy` and `yy` have the same function but `Vy` the cursor will move to the beginning of the line.
+
+Using `v%` to highlight all the 
+
+Using `va{` to highlight all the text and around {}. Then, using `Shift V` to hightlight all the lines. You can use `o` in visual mode to move backward and forward, go to the first line and last line.
+
+
+
+
+
 ## Usage
 
 ### LazyVim
