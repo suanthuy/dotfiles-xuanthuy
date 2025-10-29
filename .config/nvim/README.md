@@ -11,7 +11,7 @@
     - Using indent for sure.
 - [x] mini-icons.nvim
 - [x] which-key.nvim
-- [ ] fzf-lua
+- [x] fzf-lua
 - [ ] telescope
 - [ ] grup-far
 - [ ] gitsigns
@@ -39,7 +39,7 @@ Using `h, j, k, l` to move left, down, up, right.
 
 Using `i` for inserting, the insert mode will apply before the cursor.
 
-Using `I` for inserting, the insert mode will apply before the line.
+Using `I` for inserting, the insert mode will apply beginning of the line.
 
 Using `a` for append, the insert mode will apply after the cursor.
 
@@ -156,13 +156,25 @@ Using `v%` to highlight all the
 
 Using `va{` to highlight all the text and around {}. Then, using `Shift V` to hightlight all the lines. You can use `o` in visual mode to move backward and forward, go to the first line and last line.
 
+Using `yap` for yanking the paragraph and all the empty lines around. You can use `dap` for delete the paragraph and all the empty lines around.
 
+Using `>` + <number> + `j` or `k` for shift all the lines to the left.
 
+You can using `ctrl` + `v` for entering V-block mode. Then, press `I` for entering insert mode. After, you text anything in the first line, all the other lines will apply the same structure.
 
+Highlight by visual mode and text `:` to entering replace function. Then, text `s/$/";` to add "; to the end of all the highlight lines.After that, using `g ctrl a` to increase all the index. The other way to do the same thing is that using `vip` to highlight the paragraph.Then, using `:` to entering replace mode and text like this for replacing `:'<,'>s/\(\w.*\)/data[0] = "\1";`
+
+You can use `ctrl a` to increasing the first element number in the line, better when using with visual mode.
+
+`ctrl o`
 
 ## Usage
 
 ### LazyVim
+
+LazyVim is a 
+
+### fzf-lua
 
 ### numToStr/Comment.nvim
 
