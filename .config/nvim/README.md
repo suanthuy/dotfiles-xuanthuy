@@ -198,6 +198,9 @@ You can use cargo from rustup or npm to install tree-sitter-cli.
     npm install -g tree-sitter-cli
 ```
 
+Using `:InspectTree` to see the whole syntax that treesitter parses all the files and export. It will recognize all the value, paragraph in the file.
+
+Using `incremental_selection` to select the text or the value inside a bracket. You can use the keyword setting to increase the level or decrease.
 
 
 

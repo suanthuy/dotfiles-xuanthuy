@@ -168,8 +168,9 @@ The command of ripgrep:
 
 ```
     rg [OPTIONS] PATTERN [PATH ...]
-    Ex: rg Port /etc/ssh/ssh_config --> command will return all the Port position with row number
-    --> can check by nvim +<row number> <path to file>
+    Ex: rg Port /etc/ssh/ssh_config 
+        --> command will return all the Port position with row number
+        --> can check by nvim +<row number> <path to file>
 ```
 
 If you do not give rg a path, it will search recursively your current working directory.
