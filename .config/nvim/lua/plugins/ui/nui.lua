@@ -3,6 +3,6 @@ return {
     -- dependence for folke-noice
     {
         "MunifTanjim/nui.nvim",
-        enabled = false,
+        enabled = true,
     }
 }

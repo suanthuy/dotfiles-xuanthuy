@@ -8,18 +8,23 @@
 - [x] ColorScheme
 - [x] Lualine.nvim (Status line)
 - [x] Snacks.nvim
-    - Using indent for sure.
+    - Using indent for sure
 - [x] mini-icons.nvim
 - [x] which-key.nvim
 - [x] fzf-lua
 - [x] grug-far.nvim
     - <leader> sr for grug-far
-- [ ] nvim-treesitter
-- [ ] folke-notice
-- [ ] folke-flash
+- [x] nvim-treesitter
+    - Install and add nvim-treesitter-textobjects
+    - af, if to find functions
+- [x] folke-notice
+- [x] folke-flash
+    - s, S, r, R keymap
+- [x] bufferline
+    - Do not like to use bufferline
+- [ ] Neo-tree
 - [ ] folke-todo-coments
 - [ ] folke-trouble
-- [ ] bufferline
 - [ ] mini-pairs
 - [ ] gitsigns
 
