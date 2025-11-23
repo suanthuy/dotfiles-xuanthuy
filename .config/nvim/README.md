@@ -22,11 +22,16 @@
     - s, S, r, R keymap
 - [x] bufferline
     - Do not like to use bufferline
-- [ ] Neo-tree
-- [ ] folke-todo-coments
-- [ ] folke-trouble
+- [x] Neo-tree
+    - <leader> fe to open and close neo-tree
+    - ? for helping
+- [x] folke-todo-coments
+- [x] folke-trouble
+- [x] vim-fugitive
+    - Git in neovim
+- [x] gitsigns
+    - highlight the diff with git
 - [ ] mini-pairs
-- [ ] gitsigns
 
 ## Nvim cheat sheet
 
@@ -207,6 +212,19 @@ Using `:InspectTree` to see the whole syntax that treesitter parses all the file
 
 Using `incremental_selection` to select the text or the value inside a bracket. You can use the keyword setting to increase the level or decrease.
 
+### folke-flash
+
+Folke Flash is a plugin that allow you to nevigate your code with search labels, enhanced character motions and treesitter integration.
+
+### vim-fugitive
+
+Fugitive is a wrap Git plugin for Vim.
+
+:Gvdiff --> vertical split and h for horizontal split
+
+### neo-tree
+
+Neo-tree is a plugin to manage the file system and other tree like structures.
 
 
 
