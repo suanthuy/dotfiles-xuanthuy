@@ -2,10 +2,10 @@ return {
     -- auto pairs
     {
         "echasnovski/mini.pairs",
-        enabled = false,
+        enabled = true,
         event = "VeryLazy",
         opts = {
-            modes = { insert = true, command = true, terminal = false },
+            modes = { insert = true, command = false, terminal = false },
             -- skip autopair when next character is one of these
             skip_next = [=[[%w%%%'%[%"%.%`%$]]=],
             -- skip autopair when the cursor is inside these treesitter nodes
@@ -17,7 +17,8 @@ return {
             markdown = true,
         },
         config = function(_, opts)
-            -- LazyVim.mini.pairs(opts)
+            local pairs = require("mini.pairs")
+            pairs.setup(opts)
         end,
     },
 }

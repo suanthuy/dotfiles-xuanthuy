@@ -31,7 +31,7 @@
     - Git in neovim
 - [x] gitsigns
     - highlight the diff with git
-- [ ] mini-pairs
+- [x] mini-pairs
 
 ## Nvim cheat sheet
 
@@ -225,6 +225,7 @@ Fugitive is a wrap Git plugin for Vim.
 ### neo-tree
 
 Neo-tree is a plugin to manage the file system and other tree like structures.
+
 
 
 
