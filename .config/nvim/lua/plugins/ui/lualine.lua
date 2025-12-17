@@ -16,7 +16,14 @@ return {
             -- end
         end,
         opts = function()
-
+            local opts = {
+                options = {
+                theme = "auto",
+                component_separators = { left = '', right = ''},
+                section_separators = { left = '', right = '' },
+                },
+            }
+            return opts
         end,
     },
 

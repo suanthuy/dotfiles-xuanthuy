@@ -189,6 +189,12 @@ LazyVim is a Neovim setup powered to make easy to customize and extend your conf
 
 fzf is a general-purpose command line fuzzy finder. fzf uses for finding files, folder.
 
+`Ctrl - T`: Fuzzy find files and directories under the current directory and paste the selected paths onto command line.
+
+`Ctrl - R`: Fuzzy search through your command history, enabling you to find and re-execute previous commands.
+
+`Alt - C`: Change the current working directory to selected directory found via fuzzy search.
+
 ### grug-far
 
 Find and Replace plugin for neovim.
