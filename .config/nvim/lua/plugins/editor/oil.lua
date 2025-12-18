@@ -5,11 +5,13 @@ return {
         ---@type oil.SetupOpts
         enabled = true,
         opts = function()
-            local keymaps = {
-
+            local options = {
+                    view_options = {
+                        show_hidden = true,
+                },
             }
 
-            return keymaps
+            return options
         end,
         -- Optional dependencies
         dependencies = { { "nvim-mini/mini.icons", opts = {} } },
