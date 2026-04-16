@@ -32,6 +32,9 @@
 - [x] gitsigns
     - highlight the diff with git
 - [x] mini-pairs
+- [x] conform.nvim
+    - Lightweight yet powerful formatter plugin for Neovim.
+    - Auto formatting like prettier.
 
 ## Nvim cheat sheet
 

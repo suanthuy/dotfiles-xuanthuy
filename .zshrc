@@ -132,7 +132,7 @@ alias remove-lazy-plugins='sudo rm -fr ~/.local/share/nvim/lazy && sudo rm -fr ~
 alias cp-nvim-config='nvim-dotfiles && cp -r ./ ~/.config'
 
 # acer wmi battery
-alias acerbattery='cd /mnt/install/01-Installer/acer-wmi-battery && sudo insmod acer-wmi-battery.ko'
+alias acerbattery='cd /mnt/install/01-Installer/acer_wmi_battery && sudo insmod acer-wmi-battery.ko'
 
 # Using starship if have
 if command -v starship >/dev/null 2>&1; then

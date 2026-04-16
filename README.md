@@ -83,7 +83,7 @@ Alternatively, you can use "git clone" the fzf repository to any directory and r
     ~/.fzf/install
 ```
 
-Fuzzy find through your command history
+Fuzzy find through your *command history*
 
 ```
     ctrl + r

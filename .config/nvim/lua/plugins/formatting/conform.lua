@@ -1,7 +1,7 @@
 return {
     {
         "stevearc/conform.nvim",
-        enabled = false,
+        enabled = true,
         dependencies = { "mason.nvim" },
         lazy = true,
         cmd = "ConformInfo",
