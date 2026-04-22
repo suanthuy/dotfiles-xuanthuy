@@ -119,48 +119,97 @@ alias learningnote='cd /mnt/install/29-Learning-note'
 # dotfiles
 alias dotfiles='cd ~/dotfiles'
 
-# remove nvim-config
-alias remove-nvim-config='nvim-config && sudo rm -fr *'
-
 # remove lazy plugins
 alias remove-lazy-plugins='sudo rm -fr ~/.local/share/nvim/lazy && sudo rm -fr ~/.local/state/nvim/lazy && sudo rm -fr ~/.config/nvim/lazy-lock.json'
-
-# copy nvim-config
-alias cp-nvim-config='nvim-dotfiles && cp -r ./ ~/.config'
 
 # acer wmi battery
 alias acerbattery='cd /mnt/install/01-Installer/acer_wmi_battery && sudo insmod acer-wmi-battery.ko'
 
-# Using starship if have
-if command -v starship >/dev/null 2>&1; then
-  echo "Starship is installed"
-  starship --version
-  eval "$(starship init zsh)"
+
+# Using zsh if have
+if command -v zsh >/dev/null 2>&1; then
+    echo "zsh is installed"
+    zsh --version
+    echo "==================="
 else
-  echo "Starship is NOT installed"
+    echo "zsh is NOT installed"
+    echo "==================="
 fi
 
+# Using starship if have
+if command -v starship >/dev/null 2>&1; then
+    echo "Starship is installed"
+    starship --version
+    eval "$(starship init zsh)"
+    echo "==================="
+else
+    echo "Starship is NOT installed"
+    echo "==================="
+fi
+
+# Using stow if have
+if command -v stow >/dev/null 2>&1; then
+    echo "stow is installed"
+    stow --version
+    echo "==================="
+else
+    echo "stow is NOT installed"
+    echo "==================="
+fi
 
 # Using fzf if have
 if command -v fzf >/dev/null 2>&1; then
-  echo "fzf is installed"
-  echo "check fzf version"
-  fzf --version
-  echo "Set up theme catppucin-frappe for fzf"
-  export FZF_DEFAULT_OPTS=" \
-    --color=bg+:#414559,bg:#303446,spinner:#F2D5CF,hl:#E78284 \
-    --color=fg:#C6D0F5,header:#E78284,info:#CA9EE6,pointer:#F2D5CF \
-    --color=marker:#BABBF1,fg+:#C6D0F5,prompt:#CA9EE6,hl+:#E78284 \
-    --color=border:#737994,label:#C6D0F5"
+    echo "fzf is installed"
+    echo "check fzf version"
+    fzf --version
+    echo "Set up theme catppucin-frappe for fzf"
+    export FZF_DEFAULT_OPTS=" \
+        --color=bg+:#414559,bg:#303446,spinner:#F2D5CF,hl:#E78284 \
+        --color=fg:#C6D0F5,header:#E78284,info:#CA9EE6,pointer:#F2D5CF \
+        --color=marker:#BABBF1,fg+:#C6D0F5,prompt:#CA9EE6,hl+:#E78284 \
+        --color=border:#737994,label:#C6D0F5"
+    echo "==================="
 else
-  echo "fzf is NOT installed"
+    echo "fzf is NOT installed"
+    echo "==================="
+fi
+
+# Using fdfind if have
+if command -v fdfind >/dev/null 2>&1; then
+    echo "fdfind is installed"
+    fdfind --version
+    echo "==================="
+else
+    echo "fdfind is NOT installed"
+    echo "==================="
+fi
+
+# Using ripgrep if have
+if command -v rg >/dev/null 2>&1; then
+    echo "ripgrep is installed"
+    rg --version
+    echo "==================="
+else
+    echo "ripgrep is NOT installed"
+    echo "==================="
+fi
+
+# Using nvim if have
+if command -v nvim >/dev/null 2>&1; then
+    echo "nvim is installed"
+    nvim --version
+    echo "==================="
+else
+    echo "nvim is NOT installed"
+    echo "==================="
 fi
 
 # Using tmux if have
 if command -v tmux >/dev/null 2>&1; then
-  echo "tmux is installed"
+    echo "tmux is installed"
+    tmux -V
 else
-  echo "tmux is NOT installed"
+    echo "tmux is NOT installed"
 fi
 
 # Update fzf config
