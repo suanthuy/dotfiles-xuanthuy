@@ -117,10 +117,7 @@ alias zshconfig='nvim ~/.zshrc'
 alias learningnote='cd /mnt/install/29-Learning-note'
 
 # dotfiles
-alias dotfiles='cd /mnt/install/36-dotfiles'
-
-# nvim-config
-alias nvim-config='cd ~/.config/nvim'
+alias dotfiles='cd ~/dotfiles'
 
 # remove nvim-config
 alias remove-nvim-config='nvim-config && sudo rm -fr *'
