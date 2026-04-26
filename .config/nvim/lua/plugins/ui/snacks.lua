@@ -1,7 +1,9 @@
 return {
     {
         "folke/snacks.nvim",
+        ---@type snacks.Config
         opts = {
+            bigfile = { enabled = true },
             indent = { 
                 enabled = true,
                 char = "│",
@@ -33,6 +35,12 @@ return {
                     "RainbowDelimiterViolet",
                 },
             },
+        },
+        keys = {
+            { "<leader>t", function() Snacks.terminal() end, desc = "Toggle Terminal" },
+            { "<leader>ti>", function() Snacks.terminal() end, desc = "which_key_ignore" },
+            { "<leader>z",  function() Snacks.zen() end, desc = "Toggle Zen Mode" },
+            { "<leader>Z",  function() Snacks.zen.zoom() end, desc = "Toggle Zoom" },
         },
     },
 }
