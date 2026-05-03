@@ -208,8 +208,18 @@ fi
 if command -v tmux >/dev/null 2>&1; then
     echo "tmux is installed"
     tmux -V
+    echo "==================="
 else
     echo "tmux is NOT installed"
+    echo "==================="
+fi
+
+# Using ffmpeg if have
+if command -v ffmpeg >/dev/null 2>&1; then
+    echo "ffmpeg is installed"
+    ffmpeg -version
+else
+    echo "ffmpeg is NOT installed"
 fi
 
 # Update fzf config

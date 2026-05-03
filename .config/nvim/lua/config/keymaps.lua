@@ -5,9 +5,7 @@
 -- % to create new file
 -- d to create new directory
 -- :Ex for quit the file and go to directory
---
--- space bar leader key
-vim.g.mapleader = " "
+-- space bar leader key vim.g.mapleader = " "
 
 -- jk equal to esc
 vim.keymap.set("i", "jk", "<ESC>")
@@ -19,7 +17,7 @@ vim.keymap.set("i", "jk", "<ESC>")
 -- vim.keymap.set("n", "<leader>s", ":w<CR>")
 
 -- :Ex for quit the file and go to directory
-vim.keymap.set("n", "<leader>ex", ":Ex<CR>")
+-- vi.keymap.set("n", "<leader>ex", ":Ex<CR>")
 
 -- Disable <C-z>
 vim.keymap.set("n", "<C-z>", "")
@@ -30,5 +28,7 @@ vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right win
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
--- Oil keymaps
-vim.keymap.set("n", "<leader>-", "<cmd>Oil<CR>", {desc = "Open the Parent Directory in Oil"})
+-- split vertical and horizontal
+vim.keymap.set("n", "<C-v>", "<cmd>:vs<CR>", { desc = "Split the screen vertically"})
+vim.keymap.set("n", "<C-h>", "<cmd>:sp<CR>", { desc = "Split the screen horizontally"})
+
